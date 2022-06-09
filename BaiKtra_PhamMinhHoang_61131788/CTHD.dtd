@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!ELEMENT QLBS (title, name,CTHD+)>
+<!ELEMENT title (#PCDATA) >
+<!ELEMENT name (#PCDATA) >
+<!ELEMENT CTHD (SoHD, Masach, SL, gia)>
+<!ELEMENT SoHD  (#PCDATA)>
+<!ELEMENT Masach (#PCDATA) >
+<!ELEMENT SL (#PCDATA) >
+<!ELEMENT gia (#PCDATA) >

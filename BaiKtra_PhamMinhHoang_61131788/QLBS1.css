@@ -1,0 +1,33 @@
+NXB{
+display:block;
+font-size: 36pt;
+font-weight: bold;
+text-align:center;
+color: red;
+}
+Sach
+{
+display:block;
+font-size:16pt;
+text-align:center;
+text-decoration:underline;
+color: blue;
+}
+Nhanvien
+{
+display:block;
+margin-top:10pt;
+color: yellow;
+}
+HoaDon
+{
+display:block;
+margin-top:10pt;
+color: brown;
+}
+CTHD
+{
+display:block;
+margin-top:10pt;
+color: green;
+}

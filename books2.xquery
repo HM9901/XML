@@ -1,0 +1,1 @@
+doc("book.xml")/bookstore/book/title

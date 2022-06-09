@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<famousPeople>
+    <people>
+        <name>Winston Chur</name>
+        <born>1874-11-30</born>
+        <died>1965-01-23</died>
+    </people>
+    <people>
+        <name>ABC</name>
+        <born>1874-11-30</born>
+        <died>1950-01-24</died>
+    </people>
+    <people>
+        <name>XYC Chur</name>
+        <born>1874-11-30</born>
+        <died>1944-01-24</died>
+    </people>
+    <people>
+        <name>ÁASSD Chur</name>
+        <born>1874-11-30</born>
+        <died>1960-01-24</died>
+    </people>
+</famousPeople>
+

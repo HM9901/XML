@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?xml-stylesheet type="text/xsl" href="Bai7_2_SinhVien.xsl"?>
+<QLSV xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:noNamespaceSchemaLocation="file:/D:/HK2-thirdYear/XML/repos/Bai7_2_SinhVien.xsd">
+    <SinhVien>
+        <MaSV>SV01</MaSV>
+        <tenSV>Phan Tấn Cường</tenSV>
+        <GioiTinh>nam</GioiTinh>
+        <NgaySinh>2006-05-04</NgaySinh>
+        <MaLop>CNTT16</MaLop>
+    </SinhVien>
+    <SinhVien>
+        <MaSV>SV02</MaSV>
+        <tenSV>Huỳnh Chí Tâm</tenSV>
+        <GioiTinh>nam</GioiTinh>
+        <NgaySinh>2006-05-04</NgaySinh>
+        <MaLop>KTTC15</MaLop>
+    </SinhVien>
+    <SinhVien>
+        <MaSV>SV03</MaSV>
+        <tenSV>Vương Chí Dũng</tenSV>
+        <GioiTinh>nam</GioiTinh>
+        <NgaySinh>2006-05-04</NgaySinh>
+        <MaLop>CNTT16</MaLop>
+    </SinhVien>
+    <SinhVien>
+        <MaSV>SV04</MaSV>
+        <tenSV>Phạm Đức Nguyên</tenSV>
+        <GioiTinh>nam</GioiTinh>
+        <NgaySinh>2006-05-04</NgaySinh>
+        <MaLop>KTTC15</MaLop>
+    </SinhVien>
+    <SinhVien>
+        <MaSV>SV05</MaSV>
+        <tenSV>Trương Mỹ Yến Nhi</tenSV>
+        <GioiTinh>nữ</GioiTinh>
+        <NgaySinh>2006-05-04</NgaySinh>
+        <MaLop>KTTC16</MaLop>
+    </SinhVien>
+</QLSV>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?xml-stylesheet type="text/css" href="Data.css"?>
+<document>
+    <title class='standout'>Giáo trình XML</title>
+    <author>Nguyễn Thiện Bằng</author>
+    <paragraph>
+        Chào mừng các bạn đến với XML. XML là một ngôn ngữ dùng để quản lý dữ liệu ở hình thức ngắn gọn, dễ dàng cho việc quản 
+        lý.
+    </paragraph>
+    <paragraph>
+        Thuật ngữ đánh dấu nói đến các mã hay các dấu hiệu bạn đưa vào một tài liệu để chỉ ra cách hiển thị dữ liệu cho tài liệu đó.
+    </paragraph>
+</document>
+

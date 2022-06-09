@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="KetQua7_4.xsl"?>
+<QLD xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:noNamespaceSchemaLocation="file:/D:/HK2-thirdYear/XML/repos/KetQua7_4.xsd">
+    <Diem>
+        <Masv>sv01</Masv>
+        <MaMH>THDC</MaMH>
+        <DiemThi>10</DiemThi>
+    </Diem>
+    <Diem>
+        <Masv>sv01</Masv>
+        <MaMH>THCP</MaMH>
+        <DiemThi>9</DiemThi>
+    </Diem>
+    <Diem>
+        <Masv>sv02</Masv>
+        <MaMH>THDC</MaMH>
+        <DiemThi>8</DiemThi>
+    </Diem>
+    <Diem>
+        <Masv>sv02</Masv>
+        <MaMH>THCP</MaMH>
+        <DiemThi>6</DiemThi>
+    </Diem>
+    <Diem>
+        <Masv>sv03</Masv>
+        <MaMH>THDC</MaMH>
+        <DiemThi>7</DiemThi>
+    </Diem>
+    <Diem>
+        <Masv>sv03</Masv>
+        <MaMH>THCP</MaMH>
+        <DiemThi>9</DiemThi>
+    </Diem>
+</QLD>

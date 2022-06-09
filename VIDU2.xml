@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<!DOCTYPE DOCUMENT[
+    
+    <!ENTITY TODAY "MARCH 14, 2022">
+]>
+<DOCUMENT>
+    <CUSTOMER>
+        <NAME>
+            <LAST_NAME> aaa </LAST_NAME>
+            <FIRST_NAME> bbb </FIRST_NAME>
+        </NAME>
+        <DATE> &TODAY; </DATE>
+        <ORDERS>
+            <ITEM>
+                <PRODUCT> Tomatoes </PRODUCT>
+                <NUMBER> 25 </NUMBER>
+                <PRICE> $1.25 </PRICE>
+            </ITEM>
+            <ITEM>
+                <PRODUCT> Juices </PRODUCT>
+                <NUMBER> 30 </NUMBER>
+                <PRICE> $2.25 </PRICE>
+            </ITEM>
+        </ORDERS>
+    </CUSTOMER>
+</DOCUMENT>

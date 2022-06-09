@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+
+    <xs:element name="QLTM">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="KhachHang" maxOccurs="unbounded">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="MaKH">
+                                
+                            </xs:element>
+                            <xs:element name="tenKH" type="xs:string"/>
+                            <xs:element name="tendemKH" type="xs:string"/>
+                            <xs:element name="hoKH" type="xs:string"/>
+                            <xs:element name="diaChi" type="xs:string"/>
+                            <xs:element name="SDT">
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                        <xs:pattern value="[0-9]{10}"/>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                            <xs:element name="Avatar" type="xs:string"/>
+                            <xs:element name="Email" type="xs:string"/>
+                            <xs:element name="tenDN" type="xs:string"/>
+                            <xs:element name="Pass" type="xs:string"/>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="loaiNV" maxOccurs="unbounded">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="maLoaiNV" type="xs:string"/>
+                            <xs:element name="loaiNV" type="xs:string"/>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="NhanVien" maxOccurs="unbounded">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="MaNV">
+                                <xs:complexType>
+                                    <xs:sequence/>
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element name="tenNV" type="xs:string"/>
+                            <xs:element name="tendemNV" type="xs:string"/>
+                            <xs:element name="hoNV" type="xs:string"/>
+                            <xs:element name="ngaySinh" type="xs:string"/>
+                            <xs:element name="diaChi" type="xs:string"/>
+                            <xs:element name="SDT">
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                        <xs:pattern value="[0-9]{10}"/>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                            <xs:element name="avatar" type="xs:string"/>
+                            <xs:element name="email" type="xs:string"/>
+                            <xs:element name="tenDN" type="xs:string"/>
+                            <xs:element name="Pass" type="xs:string"/>
+                            <xs:element name="maLoaiNV" type="xs:string"/>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="loaiSP" maxOccurs="unbounded">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="MaLSP" type="xs:string"/>
+                            <xs:element name="tenLSP" type="xs:string"/>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="sanPham" maxOccurs="unbounded">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="MaSP" type="xs:string"/>
+                            <xs:element name="tenSP" type="xs:string"/>
+                            <xs:element name="soLuongTon" type="xs:int"/>
+                            <xs:element name="img" type="xs:string"/>
+                            <xs:element name="moTa" type="xs:string"/>
+                            <xs:element name="giaBan" type="xs:int"/>
+                            <xs:element name="ngayThem" type="xs:date"/>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="binhLuan" maxOccurs="unbounded">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="IDBL" type="xs:string"/>
+                            <xs:element name="MaKH" type="xs:string"/>
+                            <xs:element name="MaSP" type="xs:string"/>
+                            <xs:element name="noiDungBL" type="xs:string"/>
+                            <xs:element name="thoiGianBL" type="xs:time"/>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="tinhTrang" maxOccurs="unbounded">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="MaTT" type="xs:string"/>
+                            <xs:element name="tenTT" type="xs:string"/>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="phuongThucTT" maxOccurs="unbounded">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="MaPTT" type="xs:string"/>
+                            <xs:element name="tenPT" type="xs:string"/>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="hoaDon" maxOccurs="unbounded">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="IDHD" type="xs:string"/>
+                            <xs:element name="MaKH" type="xs:string"/>
+                            <xs:element name="ngayDatHang" type="xs:date"/>
+                            <xs:element name="ngayGiaoHang" type="xs:date"/>
+                            <xs:element name="noiGiaoHang" type="xs:string"/>
+                            <xs:element name="MaNVduyet" type="xs:string"/>
+                            <xs:element name="MaNVgiao" type="xs:string"/>
+                            <xs:element name="MaPTT" type="xs:string"/>
+                            <xs:element name="TT" type="xs:string"/>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="CTHD" maxOccurs="unbounded">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="IDHD" type="xs:string"/>
+                            <xs:element name="MaSP" type="xs:string"/>
+                            <xs:element name="SL" type="xs:int"/>
+                            <xs:element name="donGia" type="xs:decimal"/>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+        <xs:key name="KHkey">
+            <xs:selector xpath="KhachHang"/>
+            <xs:field xpath="MaKH"/>
+        </xs:key>
+        <xs:key name="loaiNVkey">
+            <xs:selector xpath="loaiNV"/>
+            <xs:field xpath="maLoaiNV"/>
+        </xs:key>
+        <xs:key name="NVkey">
+            <xs:selector xpath="NhanVien"/>
+            <xs:field xpath="MaNV"/>
+        </xs:key>
+        <xs:keyref name="NVrefkey" refer="loaiNVkey">
+            <xs:selector xpath="NhanVien"/>
+            <xs:field xpath="maLoaiNV"/>
+        </xs:keyref>
+        <xs:key name="LSPkey">
+            <xs:selector xpath="loaiSP"/>
+            <xs:field xpath="MaLSP"/>
+        </xs:key>
+        <xs:key name="SPkey">
+            <xs:selector xpath="sanPham"/>
+            <xs:field xpath="MaSP"/>
+        </xs:key>
+        <xs:keyref name="Sprefkey" refer="LSPkey">
+            <xs:selector xpath="sanPham"/>
+            <xs:field xpath="MaLSP"/>
+        </xs:keyref>
+        <xs:key name="BLkey">
+            <xs:selector xpath="binhLuan"/>
+            <xs:field xpath="IDBL"/>
+        </xs:key>
+        <xs:keyref name="BLrefkey" refer="KHkey">
+            <xs:selector xpath="binhLuan"/>
+            <xs:field xpath="MaKH"/>
+        </xs:keyref>
+        <xs:keyref name="BLkeyref" refer="SPkey">
+            <xs:selector xpath="binhLuan"/>
+            <xs:field xpath="MaSP"/>
+        </xs:keyref>
+        <xs:key name="TTkey">
+            <xs:selector xpath="tinhTrang"/>
+            <xs:field xpath="MaTT"/>
+        </xs:key>
+        <xs:key name="PTkey">
+            <xs:selector xpath="phuongThiucTT"/>
+            <xs:field xpath="MaPTT"/>
+        </xs:key>
+        <xs:key name="HDkey">
+            <xs:selector xpath="hoaDon"/>
+            <xs:field xpath="IDHD"/>
+        </xs:key>
+        <xs:keyref name="HDrefkey" refer="KHkey">
+            <xs:selector xpath="hoaDon"/>
+            <xs:field xpath="MaKH"/>
+        </xs:keyref>
+        <xs:keyref name="HDkeyref" refer="NVkey">
+            <xs:selector xpath="hoaDon"/>
+            <xs:field xpath="MaNVduyet"/>
+        </xs:keyref>
+        <xs:keyref name="refkeyHD" refer="NVkey">
+            <xs:selector xpath="hoaDon"/>
+            <xs:field xpath="MaNVgiao"/>
+        </xs:keyref>
+        <xs:keyref name="keyrefHD" refer="PTkey">
+            <xs:selector xpath="hoaDon"/>
+            <xs:field xpath="MaPTT"/>
+        </xs:keyref>
+        <xs:keyref name="refHDkey" refer="TTkey">
+            <xs:selector xpath="hoaDon"/>
+            <xs:field xpath="TT"/>
+        </xs:keyref>
+        <xs:key name="CTkey">
+            <xs:selector xpath="CTHD"/>
+            <xs:field xpath="IDHD"/>
+        </xs:key>
+        <xs:keyref name="CTrefkey" refer="HDkey">
+            <xs:selector xpath="CTHD"/>
+            <xs:field xpath="IDHD"/>
+        </xs:keyref>
+        <xs:keyref name="CTkeyref" refer="SPkey">
+            <xs:selector xpath="CTHD"/>
+            <xs:field xpath="MaSP"/>
+        </xs:keyref>
+    </xs:element>
+</xs:schema>

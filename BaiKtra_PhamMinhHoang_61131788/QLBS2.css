@@ -1,0 +1,28 @@
+title {
+    font-size: larger;
+    font-weight: 500;
+    color: red;
+    display: block;
+}
+
+name {
+    font-size: large;
+    font-weight: 200;
+    color: purple;
+    text-align: center;
+    display: block;
+}
+
+CTHD {
+    display: block;
+    border: 1px solid black;
+    width: 350px;
+}
+
+SoHD, Masach, SL {
+    border-right: 1px solid black;
+    display:inline-block;
+    padding: 2px;
+    width: 90px;
+}
+

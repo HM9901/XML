@@ -1,0 +1,430 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="19.0">
+    <meta>
+        <filters directoryPatterns="" filePatterns="BT1.xpr" positiveFilePatterns="" showHiddenFiles="false"/>
+        <options>
+            <serialized version="19.0" xml:space="preserve">
+                <serializableOrderedMap>
+                    <entry>
+                        <String>scenario.associations</String>
+                        <scenarioAssociation-array>
+                            <scenarioAssociation>
+                                <field name="url">
+                                    <String>BaiKtra2_PhamMinhHoang_61131788/QLDL.xquery</String>
+                                </field>
+                                <field name="scenarioIds">
+                                    <list>
+                                        <String>QLDL</String>
+                                    </list>
+                                </field>
+                                <field name="scenarioTypes">
+                                    <list>
+                                        <String>XML_XQUERY</String>
+                                    </list>
+                                </field>
+                            </scenarioAssociation>
+                            <scenarioAssociation>
+                                <field name="url">
+                                    <String>file:/C:/Users/DELL%20GMING/Downloads/QLDL1.xml</String>
+                                </field>
+                                <field name="scenarioIds">
+                                    <list>
+                                        <String>QLDL1</String>
+                                    </list>
+                                </field>
+                                <field name="scenarioTypes">
+                                    <list>
+                                        <String>XML_XQUERY</String>
+                                    </list>
+                                </field>
+                            </scenarioAssociation>
+                            <scenarioAssociation>
+                                <field name="url">
+                                    <String>8_2.xquery</String>
+                                </field>
+                                <field name="scenarioIds">
+                                    <list>
+                                        <String>8_2</String>
+                                    </list>
+                                </field>
+                                <field name="scenarioTypes">
+                                    <list>
+                                        <String>XML_XQUERY</String>
+                                    </list>
+                                </field>
+                            </scenarioAssociation>
+                            <scenarioAssociation>
+                                <field name="url">
+                                    <String>people.xml</String>
+                                </field>
+                                <field name="scenarioIds">
+                                    <list>
+                                        <String>people</String>
+                                    </list>
+                                </field>
+                                <field name="scenarioTypes">
+                                    <list>
+                                        <String>XML_XQUERY</String>
+                                    </list>
+                                </field>
+                            </scenarioAssociation>
+                        </scenarioAssociation-array>
+                    </entry>
+                    <entry>
+                        <String>scenarios</String>
+                        <scenario-array>
+                            <scenario>
+                                <field name="advancedOptionsMap">
+                                    <null/>
+                                </field>
+                                <field name="name">
+                                    <String>8_2</String>
+                                </field>
+                                <field name="baseURL">
+                                    <String></String>
+                                </field>
+                                <field name="footerURL">
+                                    <String></String>
+                                </field>
+                                <field name="fOPMethod">
+                                    <String>pdf</String>
+                                </field>
+                                <field name="fOProcessorName">
+                                    <String>Apache FOP</String>
+                                </field>
+                                <field name="headerURL">
+                                    <String></String>
+                                </field>
+                                <field name="inputXSLURL">
+                                    <String>file:/D:/HK2-thirdYear/XML/repos/8_2.xquery</String>
+                                </field>
+                                <field name="inputXMLURL">
+                                    <String>file:/D:/HK2-thirdYear/XML/repos/people.xml</String>
+                                </field>
+                                <field name="defaultScenario">
+                                    <Boolean>false</Boolean>
+                                </field>
+                                <field name="isFOPPerforming">
+                                    <Boolean>false</Boolean>
+                                </field>
+                                <field name="type">
+                                    <String>XML_XQUERY</String>
+                                </field>
+                                <field name="saveAs">
+                                    <Boolean>false</Boolean>
+                                </field>
+                                <field name="openInBrowser">
+                                    <Boolean>false</Boolean>
+                                </field>
+                                <field name="outputFile">
+                                    <null/>
+                                </field>
+                                <field name="outputResource">
+                                    <null/>
+                                </field>
+                                <field name="openOtherLocationInBrowser">
+                                    <Boolean>false</Boolean>
+                                </field>
+                                <field name="locationToOpenInBrowserURL">
+                                    <null/>
+                                </field>
+                                <field name="openInEditor">
+                                    <Boolean>false</Boolean>
+                                </field>
+                                <field name="showInHTMLPane">
+                                    <Boolean>false</Boolean>
+                                </field>
+                                <field name="showInXMLPane">
+                                    <Boolean>false</Boolean>
+                                </field>
+                                <field name="showInSVGPane">
+                                    <Boolean>false</Boolean>
+                                </field>
+                                <field name="showInResultSetPane">
+                                    <Boolean>true</Boolean>
+                                </field>
+                                <field name="useXSLTInput">
+                                    <Boolean>true</Boolean>
+                                </field>
+                                <field name="xsltParams">
+                                    <list/>
+                                </field>
+                                <field name="cascadingStylesheets">
+                                    <String-array/>
+                                </field>
+                                <field name="xslTransformer">
+                                    <String>Saxon-PE XQuery</String>
+                                </field>
+                                <field name="extensionURLs">
+                                    <String-array/>
+                                </field>
+                            </scenario>
+                            <scenario>
+                                <field name="advancedOptionsMap">
+                                    <null/>
+                                </field>
+                                <field name="name">
+                                    <String>QLDL1</String>
+                                </field>
+                                <field name="baseURL">
+                                    <String></String>
+                                </field>
+                                <field name="footerURL">
+                                    <String></String>
+                                </field>
+                                <field name="fOPMethod">
+                                    <String>pdf</String>
+                                </field>
+                                <field name="fOProcessorName">
+                                    <String>Apache FOP</String>
+                                </field>
+                                <field name="headerURL">
+                                    <String></String>
+                                </field>
+                                <field name="inputXSLURL">
+                                    <String>${currentFileURL}</String>
+                                </field>
+                                <field name="inputXMLURL">
+                                    <String>file:/C:/Users/DELL%20GMING/Downloads/QLDL1.xml</String>
+                                </field>
+                                <field name="defaultScenario">
+                                    <Boolean>false</Boolean>
+                                </field>
+                                <field name="isFOPPerforming">
+                                    <Boolean>false</Boolean>
+                                </field>
+                                <field name="type">
+                                    <String>XML_XQUERY</String>
+                                </field>
+                                <field name="saveAs">
+                                    <Boolean>false</Boolean>
+                                </field>
+                                <field name="openInBrowser">
+                                    <Boolean>false</Boolean>
+                                </field>
+                                <field name="outputFile">
+                                    <null/>
+                                </field>
+                                <field name="outputResource">
+                                    <null/>
+                                </field>
+                                <field name="openOtherLocationInBrowser">
+                                    <Boolean>false</Boolean>
+                                </field>
+                                <field name="locationToOpenInBrowserURL">
+                                    <null/>
+                                </field>
+                                <field name="openInEditor">
+                                    <Boolean>false</Boolean>
+                                </field>
+                                <field name="showInHTMLPane">
+                                    <Boolean>false</Boolean>
+                                </field>
+                                <field name="showInXMLPane">
+                                    <Boolean>false</Boolean>
+                                </field>
+                                <field name="showInSVGPane">
+                                    <Boolean>false</Boolean>
+                                </field>
+                                <field name="showInResultSetPane">
+                                    <Boolean>true</Boolean>
+                                </field>
+                                <field name="useXSLTInput">
+                                    <Boolean>true</Boolean>
+                                </field>
+                                <field name="xsltParams">
+                                    <list/>
+                                </field>
+                                <field name="cascadingStylesheets">
+                                    <String-array/>
+                                </field>
+                                <field name="xslTransformer">
+                                    <String>Saxon-PE XQuery</String>
+                                </field>
+                                <field name="extensionURLs">
+                                    <String-array/>
+                                </field>
+                            </scenario>
+                            <scenario>
+                                <field name="advancedOptionsMap">
+                                    <null/>
+                                </field>
+                                <field name="name">
+                                    <String>people</String>
+                                </field>
+                                <field name="baseURL">
+                                    <String></String>
+                                </field>
+                                <field name="footerURL">
+                                    <String></String>
+                                </field>
+                                <field name="fOPMethod">
+                                    <String>pdf</String>
+                                </field>
+                                <field name="fOProcessorName">
+                                    <String>Apache FOP</String>
+                                </field>
+                                <field name="headerURL">
+                                    <String></String>
+                                </field>
+                                <field name="inputXSLURL">
+                                    <String>file:/D:/HK2-thirdYear/XML/repos/8_2.xquery</String>
+                                </field>
+                                <field name="inputXMLURL">
+                                    <String>file:/D:/HK2-thirdYear/XML/repos/people.xml</String>
+                                </field>
+                                <field name="defaultScenario">
+                                    <Boolean>false</Boolean>
+                                </field>
+                                <field name="isFOPPerforming">
+                                    <Boolean>false</Boolean>
+                                </field>
+                                <field name="type">
+                                    <String>XML_XQUERY</String>
+                                </field>
+                                <field name="saveAs">
+                                    <Boolean>false</Boolean>
+                                </field>
+                                <field name="openInBrowser">
+                                    <Boolean>false</Boolean>
+                                </field>
+                                <field name="outputFile">
+                                    <null/>
+                                </field>
+                                <field name="outputResource">
+                                    <null/>
+                                </field>
+                                <field name="openOtherLocationInBrowser">
+                                    <Boolean>false</Boolean>
+                                </field>
+                                <field name="locationToOpenInBrowserURL">
+                                    <null/>
+                                </field>
+                                <field name="openInEditor">
+                                    <Boolean>false</Boolean>
+                                </field>
+                                <field name="showInHTMLPane">
+                                    <Boolean>false</Boolean>
+                                </field>
+                                <field name="showInXMLPane">
+                                    <Boolean>false</Boolean>
+                                </field>
+                                <field name="showInSVGPane">
+                                    <Boolean>false</Boolean>
+                                </field>
+                                <field name="showInResultSetPane">
+                                    <Boolean>true</Boolean>
+                                </field>
+                                <field name="useXSLTInput">
+                                    <Boolean>true</Boolean>
+                                </field>
+                                <field name="xsltParams">
+                                    <list/>
+                                </field>
+                                <field name="cascadingStylesheets">
+                                    <String-array/>
+                                </field>
+                                <field name="xslTransformer">
+                                    <String>Saxon-PE XQuery</String>
+                                </field>
+                                <field name="extensionURLs">
+                                    <String-array/>
+                                </field>
+                            </scenario>
+                            <scenario>
+                                <field name="advancedOptionsMap">
+                                    <null/>
+                                </field>
+                                <field name="name">
+                                    <String>QLDL</String>
+                                </field>
+                                <field name="baseURL">
+                                    <String></String>
+                                </field>
+                                <field name="footerURL">
+                                    <String></String>
+                                </field>
+                                <field name="fOPMethod">
+                                    <String>pdf</String>
+                                </field>
+                                <field name="fOProcessorName">
+                                    <String>Apache FOP</String>
+                                </field>
+                                <field name="headerURL">
+                                    <String></String>
+                                </field>
+                                <field name="inputXSLURL">
+                                    <String>file:/D:/HK2-thirdYear/XML/repos/BaiKtra2_PhamMinhHoang_61131788/QLDL.xquery</String>
+                                </field>
+                                <field name="inputXMLURL">
+                                    <String>file:/D:/HK2-thirdYear/XML/repos/BaiKtra2_PhamMinhHoang_61131788/QLDL1.xml</String>
+                                </field>
+                                <field name="defaultScenario">
+                                    <Boolean>false</Boolean>
+                                </field>
+                                <field name="isFOPPerforming">
+                                    <Boolean>false</Boolean>
+                                </field>
+                                <field name="type">
+                                    <String>XML_XQUERY</String>
+                                </field>
+                                <field name="saveAs">
+                                    <Boolean>false</Boolean>
+                                </field>
+                                <field name="openInBrowser">
+                                    <Boolean>false</Boolean>
+                                </field>
+                                <field name="outputFile">
+                                    <null/>
+                                </field>
+                                <field name="outputResource">
+                                    <null/>
+                                </field>
+                                <field name="openOtherLocationInBrowser">
+                                    <Boolean>false</Boolean>
+                                </field>
+                                <field name="locationToOpenInBrowserURL">
+                                    <null/>
+                                </field>
+                                <field name="openInEditor">
+                                    <Boolean>false</Boolean>
+                                </field>
+                                <field name="showInHTMLPane">
+                                    <Boolean>false</Boolean>
+                                </field>
+                                <field name="showInXMLPane">
+                                    <Boolean>false</Boolean>
+                                </field>
+                                <field name="showInSVGPane">
+                                    <Boolean>false</Boolean>
+                                </field>
+                                <field name="showInResultSetPane">
+                                    <Boolean>true</Boolean>
+                                </field>
+                                <field name="useXSLTInput">
+                                    <Boolean>true</Boolean>
+                                </field>
+                                <field name="xsltParams">
+                                    <list/>
+                                </field>
+                                <field name="cascadingStylesheets">
+                                    <String-array/>
+                                </field>
+                                <field name="xslTransformer">
+                                    <String>Saxon-PE XQuery</String>
+                                </field>
+                                <field name="extensionURLs">
+                                    <String-array/>
+                                </field>
+                            </scenario>
+                        </scenario-array>
+                    </entry>
+                </serializableOrderedMap>
+            </serialized>
+        </options>
+    </meta>
+    <projectTree name="BT1.xpr">
+        <folder path="."/>
+        <file name="QLSV.dtd"/>
+    </projectTree>
+</project>

@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/css" href="QLBS1.css"?>
+<QLBS xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="file:/D:/HK2-thirdYear/XML/BaiKtra_PhamMinhHoang_61131788/QLBS.xsd">
+    <NXB>
+        <MaNXB>00</MaNXB>
+        <tenNXB>NXB Kim Dong</tenNXB>
+    </NXB>
+    <NXB>
+        <MaNXB>01</MaNXB>
+        <tenNXB>NXB KHKH</tenNXB>
+    </NXB>
+    <NXB>
+        <MaNXB>02</MaNXB>
+        <tenNXB>NXB Kim Dong1</tenNXB>
+    </NXB>
+    <NXB>
+        <MaNXB>03</MaNXB>
+        <tenNXB>NXB KTKH</tenNXB>
+    </NXB>
+    <NXB>
+        <MaNXB>04</MaNXB>
+        <tenNXB>NXB Kim Dong</tenNXB>
+    </NXB>
+    <Sach>
+        <MaSach>0000000</MaSach>
+        <tenSach>Harry Potter</tenSach>
+        <NamXB>2001</NamXB>
+        <giaban>2</giaban>
+        <MaNXB>01</MaNXB>
+    </Sach>
+    <Sach>
+        <MaSach>0000001</MaSach>
+        <tenSach>Nha Gia Kim</tenSach>
+        <NamXB>2000</NamXB>
+        <giaban>50</giaban>
+        <MaNXB>04</MaNXB>
+    </Sach>
+    <Sach>
+        <MaSach>0000002</MaSach>
+        <tenSach>Harry Potter</tenSach>
+        <NamXB>2005</NamXB>
+        <giaban>40</giaban>
+        <MaNXB>02</MaNXB>
+    </Sach>
+    <Sach>
+        <MaSach>0000003</MaSach>
+        <tenSach>Napoleon Hill</tenSach>
+        <NamXB>2006</NamXB>
+        <giaban>0</giaban>
+        <MaNXB>03</MaNXB>
+    </Sach>
+    <Sach>
+        <MaSach>0000004</MaSach>
+        <tenSach>Harry Potter</tenSach>
+        <NamXB>2006</NamXB>
+        <giaban>0</giaban>
+        <MaNXB>01</MaNXB>
+    </Sach>
+    <Nhanvien>
+        <maNV>AA00</maNV>
+        <tenNV>Minh Hoang</tenNV>
+        <DiaChi>DiaChi0</DiaChi>
+        <SDT>0614592817</SDT>
+    </Nhanvien>
+    <Nhanvien>
+        <maNV>AA01</maNV>
+        <tenNV>Phuc Phan</tenNV>
+        <DiaChi>Nha Trang</DiaChi>
+        <SDT>0316254871</SDT>
+    </Nhanvien>
+    <Nhanvien>
+        <maNV>AA02</maNV>
+        <tenNV>Minh Hoang</tenNV>
+        <DiaChi>Nha Trang</DiaChi>
+        <SDT>0614529871</SDT>
+    </Nhanvien>
+    <Nhanvien>
+        <maNV>AA03</maNV>
+        <tenNV>Minh Hoang</tenNV>
+        <DiaChi>Nha Trang</DiaChi>
+        <SDT>1025469032</SDT>
+    </Nhanvien>
+    <Nhanvien>
+        <maNV>AA04</maNV>
+        <tenNV>Minh Hoang</tenNV>
+        <DiaChi>Nha Trang</DiaChi>
+        <SDT>3105642987</SDT>
+    </Nhanvien>
+    <HoaDon>
+        <SoHD>0000000000</SoHD>
+        <ngayBan>2006-05-04</ngayBan>
+        <MaNV>AA00</MaNV>
+    </HoaDon>
+    <HoaDon>
+        <SoHD>0000000001</SoHD>
+        <ngayBan>2006-05-04</ngayBan>
+        <MaNV>AA02</MaNV>
+    </HoaDon>
+    <HoaDon>
+        <SoHD>0000000002</SoHD>
+        <ngayBan>2006-05-04</ngayBan>
+        <MaNV>AA03</MaNV>
+    </HoaDon>
+    <HoaDon>
+        <SoHD>0000000003</SoHD>
+        <ngayBan>2006-05-04</ngayBan>
+        <MaNV>AA04</MaNV>
+    </HoaDon>
+    <HoaDon>
+        <SoHD>0000000004</SoHD>
+        <ngayBan>2006-05-04</ngayBan>
+        <MaNV>AA01</MaNV>
+    </HoaDon>
+    <CTHD>
+        <soHD>0000000000</soHD>
+        <MaSach>0000004</MaSach>
+        <SL>7</SL>
+        <Gia>10</Gia>
+    </CTHD>
+    <CTHD>
+        <soHD>0000000001</soHD>
+        <MaSach>0000003</MaSach>
+        <SL>1</SL>
+        <Gia>20</Gia>
+    </CTHD>
+    <CTHD>
+        <soHD>0000000002</soHD>
+        <MaSach>0000002</MaSach>
+        <SL>5</SL>
+        <Gia>50</Gia>
+    </CTHD>
+    <CTHD>
+        <soHD>0000000003</soHD>
+        <MaSach>0000001</MaSach>
+        <SL>3</SL>
+        <Gia>40</Gia>
+    </CTHD>
+    <CTHD>
+        <soHD>0000000004</soHD>
+        <MaSach>0000000</MaSach>
+        <SL>2</SL>
+        <Gia>30</Gia>
+    </CTHD>
+</QLBS>

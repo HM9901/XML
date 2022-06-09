@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SPECIALS xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:noNamespaceSchemaLocation="file:/D:/HK2-thirdYear/XML/repos/QLdia.xsd">
+    <TITLE>TITLE0</TITLE>
+    <MESSAGE>MESSAGE0</MESSAGE>
+    <CD>
+        Ước Mơ Của Bé
+        <ARTIST>ARTIST0</ARTIST>
+        <PRICEUS>0</PRICEUS>
+        <PRICEVN>0</PRICEVN>
+        <TRACK>
+            <NAME>NAME0</NAME>
+        </TRACK>
+        <TRACK>
+            <NAME>NAME1</NAME>
+        </TRACK>
+    </CD>
+</SPECIALS>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<QLSV xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:noNamespaceSchemaLocation="file:/D:/HK2-thirdYear/XML/repos/QLSV.xsd">
+    <SinhVien>
+        <MSSV>0000000</MSSV>
+        <Hoten>Hoten0</Hoten>
+        <Lop>CTK28</Lop>
+    </SinhVien>
+    <SinhVien>
+        <MSSV>0000001</MSSV>
+        <Hoten>Hoten1</Hoten>
+        <Lop>CTK28</Lop>
+    </SinhVien>
+    <MonHoc>
+        <MaMH>AA00</MaMH>
+        <TenMH>TenMH0</TenMH>
+        <SoTC>2</SoTC>
+    </MonHoc>
+    <MonHoc>
+        <MaMH>AA01</MaMH>
+        <TenMH>TenMH1</TenMH>
+        <SoTC>2</SoTC>
+    </MonHoc>
+    <Ketqua>
+        <MaSV>0000000</MaSV>
+        <MMH>AA00</MMH>
+        <Diem>5</Diem>
+    </Ketqua>
+    <Ketqua>
+        <MaSV>0000000</MaSV>
+        <MMH>AA00</MMH>
+        <Diem>5</Diem>
+    </Ketqua>
+</QLSV>

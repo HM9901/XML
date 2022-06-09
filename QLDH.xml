@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE DOCUMENT SYSTEM "file:/D:/HK2-thirdYear/XML/repos/QLDH.dtd">
+<DOCUMENT>
+    <KHACHHANG>
+        <MSKH></MSKH>
+        <TENKH></TENKH>
+        <DC></DC>
+        <ORDERS>
+            <MMH></MMH>
+            <TENMH></TENMH>
+            <SL></SL>
+            <DONGIA></DONGIA>
+        </ORDERS>
+    </KHACHHANG>
+</DOCUMENT>

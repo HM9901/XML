@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE QLBS SYSTEM "CTHD.dtd">
+<?xml-stylesheet type="text/css" href="QLBS2.css"?>
+<QLBS>
+    <title>Chi Tiết Hóa Đơn Bán Sách</title>
+    <name>Phạm Minh Hoàng</name>
+    <CTHD>
+        <SoHD>Mã Hóa Đơn</SoHD>
+        <Masach>Mã Sách</Masach>
+        <SL>Số lượng</SL>
+        <gia>Giá</gia>
+    </CTHD>
+    <CTHD>
+        <SoHD>0000000000</SoHD>
+        <Masach>0000004</Masach>
+        <SL>7</SL>
+        <gia>10</gia>
+    </CTHD>
+    <CTHD>
+        <SoHD>0000000001</SoHD>
+        <Masach>0000003</Masach>
+        <SL>1</SL>
+        <gia>20</gia>
+    </CTHD>
+    <CTHD>
+        <SoHD>0000000002</SoHD>
+        <Masach>0000002</Masach>
+        <SL>5</SL>
+        <gia>50</gia>
+    </CTHD>
+    <CTHD>
+        <SoHD>0000000003</SoHD>
+        <Masach>0000001</Masach>
+        <SL>3</SL>
+        <gia>40</gia>
+    </CTHD>
+    <CTHD>
+        <SoHD>0000000004</SoHD>
+        <Masach>0000000</Masach>
+        <SL>2</SL>
+        <gia>30</gia>
+    </CTHD>
+</QLBS>

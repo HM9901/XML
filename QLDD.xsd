@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+
+    <xs:element name="QLDD">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="Lop" maxOccurs="unbounded">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="MaLop">
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                        <xs:pattern value="[0-9][A-Z]{4}"></xs:pattern>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                            <xs:element name="TenLop" type="xs:string"/>
+                            <xs:element name="NgayDd">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="month" type="xs:byte"/>
+                                        <xs:element name="year" type="xs:byte"/>
+                                        <xs:element name="DsVang">
+                                            <xs:complexType>
+                                                <xs:sequence>
+                                                  <xs:element name="MSSV" >
+                                                      <xs:simpleType>
+                                                          <xs:restriction base="xs:string">
+                                                              <xs:pattern value="[0-9]{7}"/>
+                                                          </xs:restriction>
+                                                      </xs:simpleType>
+                                                  </xs:element>
+                                                  <xs:element name="HoTen" type="xs:string"/>
+                                                  <xs:element name="SolanVang" type="xs:byte"/>
+                                                  <xs:element name="LydoVang" type="xs:string"/>
+                                                </xs:sequence>
+                                            </xs:complexType>
+                                        </xs:element>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>

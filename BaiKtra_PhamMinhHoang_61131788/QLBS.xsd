@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+
+    <xs:element name="QLBS">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="NXB" maxOccurs="unbounded">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="MaNXB">
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                        <xs:pattern value="[0-9][0-9]"/>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                            <xs:element name="tenNXB" type="xs:string"/>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="Sach" maxOccurs="unbounded">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="MaSach">
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                        <xs:pattern value="[0-9]{7}"/>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                            <xs:element name="tenSach" type="xs:string"/>
+                            <xs:element name="NamXB" type="xs:gYear"/>
+                            <xs:element name="giaban" type="xs:decimal"/>
+                            <xs:element name="MaNXB">
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                        <xs:pattern value="[0-9][0-9]"/>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="Nhanvien" maxOccurs="unbounded">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="maNV">
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                        <xs:pattern value="[A-Z][A-Z][0-9][0-9]"/>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                            <xs:element name="tenNV" type="xs:string"/>
+                            <xs:element name="DiaChi" type="xs:string"/>
+                            <xs:element name="SDT">
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                        <xs:pattern value="[0-9]{10}"/>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="HoaDon" maxOccurs="unbounded">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="SoHD">
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                        <xs:pattern value="[0-9]{10}"/>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                            <xs:element name="ngayBan" type="xs:date"/>
+                            <xs:element name="MaNV">
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                        <xs:pattern value="[A-Z][A-Z][0-9][0-9]"/>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="CTHD" maxOccurs="unbounded">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="soHD">
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                        <xs:pattern value="[0-9]{10}"/>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                            <xs:element name="MaSach">
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                        <xs:pattern value="[0-9]{7}"/>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                            <xs:element name="SL" type="xs:byte"/>
+                            <xs:element name="Gia" type="xs:decimal"/>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+        <xs:key name="NXBkey">
+            <xs:selector xpath="NXB"/>
+            <xs:field xpath="MaNXB"/>
+        </xs:key>
+        <xs:key name="Sachkey">
+            <xs:selector xpath="Sach"/>
+            <xs:field xpath="MaSach"/>
+        </xs:key>
+        <xs:key name="NVkey">
+            <xs:selector xpath="Nhanvien"/>
+            <xs:field xpath="maNV"/>
+        </xs:key>
+        <xs:key name="HDkey">
+            <xs:selector xpath="HoaDon"/>
+            <xs:field xpath="SoHD"/>
+        </xs:key>
+        <xs:keyref name="NXBrefkey" refer="NXBkey">
+            <xs:selector xpath="Sach"/>
+            <xs:field xpath="MaNXB"/>
+        </xs:keyref>
+        <xs:keyref name="HDrefkey" refer="NVkey">
+            <xs:selector xpath="HoaDon"/>
+            <xs:field xpath="MaNV"/>
+        </xs:keyref>
+        <xs:keyref name="CTrefkey" refer="HDkey">
+            <xs:selector xpath="CTHD"/>
+            <xs:field xpath="soHD"/>
+        </xs:keyref>
+        <xs:keyref name="CTHDrefkey" refer="Sachkey">
+            <xs:selector xpath="CTHD"/>
+            <xs:field xpath="MaSach"/>
+        </xs:keyref>
+    </xs:element>
+</xs:schema>

@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+
+    <xs:element name="QLS">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="LinhVuc">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="MaLV">
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                        <xs:pattern value="[0-9]{7}"/>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                            <xs:element name="tenLinhVuc" type="xs:string"/>
+                            <xs:element name="MaS">
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                        <xs:pattern value="[a-zA-Z][a-zA-Z][0-9][0-9]"/>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="Sach" maxOccurs="unbounded">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="tuaDe" type="xs:string"/>
+                            <xs:element name="MaS">
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                        <xs:pattern value="[a-zA-Z][a-zA-Z][0-9][0-9]"/>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                            <xs:element name="MaTG">
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                        <xs:pattern value="[a-zA-Z][a-zA-Z][0-9][0-9]"/>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="tacGia" maxOccurs="unbounded">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="MaTG">
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                        <xs:pattern value="[a-zA-Z][a-zA-Z][0-9][0-9]"/>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                            <xs:element name="tenTG" type="xs:string"/>
+                            <xs:element name="DC" type="xs:string"/>
+                            <xs:element name="SDT">
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                        <xs:pattern value="([+][0-9][0-9]).([0-9]{10})"/>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                            <xs:element name="email">
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                        <xs:pattern value="[a-zA-Z0-9]*@[a-zA-Z]*.[a-zA-Z]*"/>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="sangTac" maxOccurs="unbounded">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="MaTG">
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                        <xs:pattern value="[a-zA-Z][a-zA-Z][0-9][0-9]"/>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                            <xs:element name="MaS">
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                        <xs:pattern value="[a-zA-Z][a-zA-Z][0-9][0-9]"/>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+        <xs:key name="LVkey">
+            <xs:selector xpath="LinhVuc"/>
+            <xs:field xpath="MaLV"/>
+        </xs:key>
+        <xs:key name="Sachkey">
+            <xs:selector xpath="Sach"/>
+            <xs:field xpath="MaS"/>
+        </xs:key>
+        <xs:key name="tacGia">
+            <xs:selector xpath="tacGia"/>
+            <xs:field xpath="MaTG"/>
+        </xs:key>
+        <xs:keyref name="keyrefSach" refer="Sachkey">
+            <xs:selector xpath="LinhVuc"/>
+            <xs:field xpath="MaS"/>
+        </xs:keyref>
+        <xs:keyref name="TGkeyref" refer="tacGia">
+            <xs:selector xpath="Sach"/>
+            <xs:field xpath="MaTG"/>
+        </xs:keyref>
+        <xs:keyref name="TLkeyref" refer="tacGia">
+            <xs:selector xpath="theLoai"/>
+            <xs:field xpath="MaTG"/>
+        </xs:keyref>
+        <xs:keyref name="keyrefTL" refer="Sachkey">
+            <xs:selector xpath="Sach"/>
+            <xs:field xpath="MaS"/>
+        </xs:keyref>
+    </xs:element>
+</xs:schema>

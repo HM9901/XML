@@ -1,0 +1,15 @@
+D:\HK2-thirdYear\XML\repos\VB_XML\VB_XML\bin\Debug\net6.0\VB_XML.exe
+D:\HK2-thirdYear\XML\repos\VB_XML\VB_XML\bin\Debug\net6.0\VB_XML.deps.json
+D:\HK2-thirdYear\XML\repos\VB_XML\VB_XML\bin\Debug\net6.0\VB_XML.runtimeconfig.json
+D:\HK2-thirdYear\XML\repos\VB_XML\VB_XML\bin\Debug\net6.0\VB_XML.dll
+D:\HK2-thirdYear\XML\repos\VB_XML\VB_XML\bin\Debug\net6.0\VB_XML.pdb
+D:\HK2-thirdYear\XML\repos\VB_XML\VB_XML\obj\Debug\net6.0\VB_XML.vbproj.AssemblyReference.cache
+D:\HK2-thirdYear\XML\repos\VB_XML\VB_XML\obj\Debug\net6.0\VB_XML.GeneratedMSBuildEditorConfig.editorconfig
+D:\HK2-thirdYear\XML\repos\VB_XML\VB_XML\obj\Debug\net6.0\VB_XML.AssemblyInfoInputs.cache
+D:\HK2-thirdYear\XML\repos\VB_XML\VB_XML\obj\Debug\net6.0\VB_XML.AssemblyInfo.vb
+D:\HK2-thirdYear\XML\repos\VB_XML\VB_XML\obj\Debug\net6.0\VB_XML.vbproj.CoreCompileInputs.cache
+D:\HK2-thirdYear\XML\repos\VB_XML\VB_XML\obj\Debug\net6.0\VB_XML.dll
+D:\HK2-thirdYear\XML\repos\VB_XML\VB_XML\obj\Debug\net6.0\refint\VB_XML.dll
+D:\HK2-thirdYear\XML\repos\VB_XML\VB_XML\obj\Debug\net6.0\VB_XML.pdb
+D:\HK2-thirdYear\XML\repos\VB_XML\VB_XML\obj\Debug\net6.0\VB_XML.genruntimeconfig.cache
+D:\HK2-thirdYear\XML\repos\VB_XML\VB_XML\obj\Debug\net6.0\ref\VB_XML.dll

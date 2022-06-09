@@ -1,0 +1,26 @@
+<!ENTITY % NXB "(MaNXB, tenNXB)">
+<!ENTITY % infoSach "(Masach, tenSach, namXB, giaban, NXB)">
+<!ENTITY % nhanvien "(MaNV, tenNV, Diachi, sdt)">
+<!ENTITY % infoHoaDon "(Ngayban, NV)">
+<!ENTITY % CTHD "(SoHD, sach, SL, gia)">
+
+<!ELEMENT QLBS (HoaDon)+>
+<!ELEMENT HoaDon (%CTHD;,%infoHoaDon;)>
+<!ELEMENT SoHD  (#PCDATA)>
+<!ELEMENT sach (%infoSach;) >
+<!ELEMENT Masach (#PCDATA) >
+<!ELEMENT tenSach (#PCDATA) >
+<!ELEMENT namXB (#PCDATA) >
+<!ELEMENT giaban (#PCDATA) >
+<!ELEMENT NXB (%NXB;) >
+<!ELEMENT MaNXB (#PCDATA) >
+<!ELEMENT tenNXB (#PCDATA) >
+<!ELEMENT SL (#PCDATA) >
+<!ELEMENT gia (#PCDATA) >
+<!ELEMENT Ngayban (#PCDATA) >
+<!ELEMENT NV (%nhanvien;) >
+<!ELEMENT MaNV (#PCDATA) >
+<!ELEMENT tenNV (#PCDATA) >
+<!ELEMENT Diachi (#PCDATA) >
+<!ELEMENT sdt (#PCDATA) >
+

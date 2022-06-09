@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="Bai7_3_monhoc.xsl"?>
+<QLMH xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:noNamespaceSchemaLocation="file:/D:/HK2-thirdYear/XML/repos/Bai7_3_monhoc.xsd">
+    <MonHoc>
+        <MaMH>CSDL</MaMH>
+        <tenMH>Cơ sở dữ liệu</tenMH>
+        <soGio>30</soGio>
+    </MonHoc>
+    <MonHoc>
+        <MaMH>MCB</MaMH>
+        <tenMH>Mạng Căn bản</tenMH>
+        <soGio>30</soGio>
+    </MonHoc>
+    <MonHoc>
+        <MaMH>THDC</MaMH>
+        <tenMH>Tin Học Đại Cương</tenMH>
+        <soGio>45</soGio>
+    </MonHoc>
+    <MonHoc>
+        <MaMH>THVP</MaMH>
+        <tenMH>Tin Học Văn Phòng</tenMH>
+        <soGio>45</soGio>
+    </MonHoc>
+    <MonHoc>
+        <MaMH>XLA</MaMH>
+        <tenMH>Xử lý ảnh</tenMH>
+        <soGio>45</soGio>
+    </MonHoc>
+</QLMH>

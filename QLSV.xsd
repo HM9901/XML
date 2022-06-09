@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+
+    <xs:element name="QLSV">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="SinhVien" maxOccurs="unbounded">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="MSSV">
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                        <xs:pattern value="[0-9]{7}"/>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                            <xs:element name="Hoten" type="xs:string"/>
+                            <xs:element name="Lop">
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                        <xs:pattern
+                                            value="CTK28|CTK28CD|CTK29|CTK29CD|CTK30|CTK30CD|CTK31|CTK31CD"
+                                        />
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="MonHoc" maxOccurs="unbounded">
+
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="MaMH">
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                        <xs:pattern value="[a-zA-Z][a-zA-Z][0-9][0-9]"/>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                            <xs:element name="TenMH" type="xs:string"/>
+                            <xs:element name="SoTC">
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:unsignedByte">
+                                        <xs:minExclusive value="0"/>
+                                        <xs:maxExclusive value="5"/>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="Ketqua" maxOccurs="unbounded">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="MaSV">
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                        <xs:pattern value="[0-9]{7}"/>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                            <xs:element name="MMH">
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                        <xs:pattern value="[a-zA-Z][a-zA-Z][0-9][0-9]"/>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                            <xs:element name="Diem">
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:double">
+                                        <xs:minExclusive value="0"/>
+                                        <xs:maxExclusive value="10"/>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+        <xs:key name="SVkey">
+            <xs:selector xpath="SinhVien"/>
+            <xs:field xpath="MSSV"/>
+        </xs:key>
+        <xs:key name="MHkey">
+            <xs:selector xpath="MonHoc"/>
+            <xs:field xpath="MaMH"/>
+        </xs:key>
+        <xs:keyref name="SVref" refer="SVkey">
+            <xs:selector xpath="Ketqua"/>
+            <xs:field xpath="MaSV"/>
+        </xs:keyref>
+        <xs:keyref name="MHref" refer="MHkey">
+            <xs:selector xpath="MonHoc"/>
+            <xs:field xpath="MMH"/>
+        </xs:keyref>
+    </xs:element>
+</xs:schema>
